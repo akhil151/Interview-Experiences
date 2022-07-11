@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+<h1>Compose your interview experience here by writing company name in the title column and the experience in the post column</h1>
+    <h2>Here are some suggestions for what to include in your post</h2>
+<ol type="1">
+        <li>The title should at least include the company and position</li>
+        <li>In the post, please specify your current employment status, work experience and the position you are interviewing for</li>
+        <li>The interview process and format of each interview</li>
+        <li>Your thoughts and anything else youd like to add, e.g. culture, office, perks, lunch, accommodations, etc.</li>
+        <li>Tag your post, e.g. google, london</li>
+    </ol>
+    <form class="" action="/compose" method="post">
+        <div class="form-group">
+            <label for="">Title</label>
+            <input class="form-control" type="text" name="postTitle">
+            <label for="">Post</label>
+            <textarea class="form-control" name="postBody" cols="30" rows="5"></textarea>
+            
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">publish</button>
+    </form>
+<%- include("partials/footer"); -%>
